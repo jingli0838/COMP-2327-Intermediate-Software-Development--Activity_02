@@ -7,6 +7,7 @@ Date: {22/9/2024}
 from abc import ABC, abstractmethod
 
 
+
 class Shape(ABC):
     """
     An abstract base class representing a geometric shape with a color.
@@ -59,6 +60,9 @@ class Shape(ABC):
             float: The perimeter of the shape. This method should be overridden by subclasses.
         """
         pass
+
+
+    
 
     
     

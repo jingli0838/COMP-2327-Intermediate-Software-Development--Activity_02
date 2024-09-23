@@ -68,5 +68,5 @@ class Rectangle(Shape):
             float: the perimeter of the rectangle.
         """
         perimeter = self.__length * 2 + self.__width * 2
-        return super().calculate_perimeter()
+        return perimeter
     
