@@ -28,7 +28,6 @@ class Triangle(Shape):
             side_3 (int): The length of the third side.
 
         Raises:
-            ValueError: If the provided sides do not form a valid triangle
             ValueError: If side_1 is not numeric.
             ValueError: If side_2 is not numeric.
             ValueError: If side_3 is not numeric.
@@ -52,9 +51,9 @@ class Triangle(Shape):
         else:
             raise ValueError("Side 3 must be numeric.")
         
-        
+ 
 
-    def __str__(self):
+    def __str__(self) ->str:
         """
         Returns a string representation of the triangle.
 
