@@ -12,10 +12,10 @@ class Train(Vehicle):
     A class representing an train, inheriting from Vehicle.
 
     Attributes:
-        make(str): Represents the make (manufacturer) of the Train.
-        model(str): Represents the model (specific vehicle model) of the Train.
-        cars(int): Represents the number of cars on the Train.
-        base_fuel_rate(float): Represents the rate at which fuel is burned by the Train.
+        __make(str): Represents the make (manufacturer) of the Train.
+        __model(str): Represents the model (specific vehicle model) of the Train.
+        __cars(int): Represents the number of cars on the Train.
+        __base_fuel_rate(float): Represents the rate at which fuel is burned by the Train.
     """
     def __init__(self, make: str, model: str, cars:int, base_fuel_rate:float):
         """

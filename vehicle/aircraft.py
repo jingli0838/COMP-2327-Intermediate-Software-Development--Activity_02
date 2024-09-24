@@ -12,10 +12,10 @@ class Aircraft(Vehicle):
     A class representing an automobile, inheriting from Vehicle.
 
     Attributes: 
-        make(str): Represents the make (manufacturer) of the Vehicle.
-        model(str): Represents the model (specific vehicle model) of the Vehicle.
-        fuel_burn_rate (float): The rate at which Aircraft fuel is expended.
-        speed (float): The cruising speed of the Aircraft.
+        __make(str): Represents the make (manufacturer) of the Vehicle.
+        __model(str): Represents the model (specific vehicle model) of the Vehicle.
+        __fuel_burn_rate (float): The rate at which Aircraft fuel is expended.
+        __speed (float): The cruising speed of the Aircraft.
     """
 
     def __init__(self, make: str, model: str, fuel_burn_rate:float, speed:float):

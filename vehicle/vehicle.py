@@ -66,7 +66,7 @@ class Vehicle(ABC):
         Returns:
             str: a string describing the vehicle's manufacture and the specific model.
         """
-        return f'Make: {self.make} \n Model: {self.model}'
+        return f'Make: {self.make} \nModel: {self.model}'
     
     @abstractmethod
     def calculate_fuel_requirement(self, distance:float) ->float:
