@@ -12,7 +12,9 @@ class Automobile(Vehicle):
     A class representing an automobile, inheriting from Vehicle.
 
     Attributes: 
-        __kilometers_per_litre (float): The number of kilometers the Automobile can drive per litre of gasoline.    
+        make(str): Represents the make (manufacturer) of the Vehicle.
+        model(str): Represents the model (specific vehicle model) of the Vehicle. 
+        kilometers_per_litre (float): The number of kilometers the Automobile can drive per litre of gasoline.
     """
 
     def __init__(self, make: str, model: str, kilometers_per_litre: float):

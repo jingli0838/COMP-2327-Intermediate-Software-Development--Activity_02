@@ -12,8 +12,8 @@ class Vehicle(ABC):
     An abstract base class representing a vehicle with a a manufacturer(make) and a specific vehicle model.
 
     Attributes:
-        __make(str): Represents the make (manufacturer) of the Vehicle.
-        __model(str): Represents the model (specific vehicle model) of the Vehicle.
+        make(str): Represents the make (manufacturer) of the Vehicle.
+        model(str): Represents the model (specific vehicle model) of the Vehicle.
     """
     
     def __init__(self, make:str, model:str):

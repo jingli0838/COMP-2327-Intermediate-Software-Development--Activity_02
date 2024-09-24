@@ -17,8 +17,9 @@ class Test(unittest.TestCase):
         self.automobile = Automobile("HONDA", "CRV", 20.0)
 
     def test_init_valid(self):
-        self.assertEqual("HONDA", self.automobile.make)   
-        self.assertEqual("CRV", self.automobile.model)
+
+        self.assertEqual("HONDA", self.automobile._Vehicle__make)   
+        self.assertEqual("CRV", self.automobile._Vehicle__model)
         self.assertEqual(20.0, self.automobile._Automobile__kilometers_per_litre)
 
     def test_init_make_invalid_raises_value_error(self):
@@ -28,6 +29,10 @@ class Test(unittest.TestCase):
     def test_init_model_invalid_raises_value_error(self):
         with self.assertRaises(ValueError):
             automobile = Automobile("HONDA", " ", 20.0)
+
+    def test_init_kilometers_per_litre_invalid_raises_value_error(self):
+        with self.assertRaises(ValueError):
+            automobile = Automobile("HONDA", "CRV ", "meters")
 
     def test_str(self):
         expected = "Make: HONDA \n Model: CRV\nThis automobile can drive 20.0 kilometers per litre."
