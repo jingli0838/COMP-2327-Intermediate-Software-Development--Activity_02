@@ -11,7 +11,7 @@ class Rectangle(Shape):
     """
     A class representing a rectangle, inheriting from Shape.
 
-    Args:
+    Attributes:
         _color (str): The color of the rectangle.
         __length (int): Represents the length of two opposing sides of the Rectangle in centimeters.
         __width (int): Represents the width of two opposing sides of the Rectangle in centimeters.
@@ -43,7 +43,7 @@ class Rectangle(Shape):
 
     def __str__(self) ->str:
         """
-        Returns a string representation of the rectangle.
+        A string representation of the rectangle.
 
         Returns:
             str: A string describing the rectangle's color ,width and length of the rectangle.

@@ -10,7 +10,7 @@ from abc import ABC, abstractmethod
 
 class Shape(ABC):
     """
-    An abstract base class representing a geometric shape with a color.
+    An abstract base class representing a shape with a color.
 
     Attributes:
         _color (str): the color of the Shape.
@@ -44,20 +44,22 @@ class Shape(ABC):
     @abstractmethod
     def calculate_area(self) ->float:
         """
-        A method calculating the area of the shape
+        An abstract method calculating the area of the shape.
+        This method must be implemented by subclasses.
 
         Returns:
-            float: The area of the shape. This method should be overridden by subclasses.
+            float: The area of the shape.
         """
         pass
     
     @abstractmethod
     def calculate_perimeter(self) ->float:
         """
-        A method calculating the perimeter of the shape
+        An abstract method calculating the perimeter of the shape.
+        This method must be implemented by subclasses.
 
         Returns:
-            float: The perimeter of the shape. This method should be overridden by subclasses.
+            float: The perimeter of the shape.
         """
         pass
 
