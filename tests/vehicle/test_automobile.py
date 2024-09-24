@@ -35,7 +35,7 @@ class Test(unittest.TestCase):
             automobile = Automobile("HONDA", "CRV ", "meters")
 
     def test_str(self):
-        expected = "Make: HONDA \n Model: CRV\nThis automobile can drive 20.0 kilometers per litre."
+        expected = "Make: HONDA \nModel: CRV\nThis automobile can drive 20.0 kilometers per litre."
         self.assertEqual(expected, str(self.automobile))
 
     def test_calculate_fuel_requirement_returns_correct_value(self):

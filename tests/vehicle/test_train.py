@@ -39,7 +39,7 @@ class Test(unittest.TestCase):
             train = Train("Siemens", "Intercity Subway", 13, None)
 
     def test_str(self):
-        expected = 'Make: Siemens \n Model: Intercity Subway\nThis train has a base fuel rate of 0.03 litres/kilometer, and contains 13 cars.'
+        expected = 'Make: Siemens \nModel: Intercity Subway\nThis train has a base fuel rate of 0.03 litres/kilometer, and contains 13 cars.'
     
     def test_calculate_fuel_requiremen_returns_correct_value(self):
         self.assertEqual(42.9, self.train.calculate_fuel_requirement(100.0))

@@ -40,7 +40,7 @@ class test(unittest.TestCase):
             aircraft = Aircraft("Boeing", "Air Bus",  40.0, "speed")
 
     def test_str(self):
-        expected = "Make: Boeing \n Model: Air Bus\nThis aircraft has a fuel burn rate of 40.0 litres/hour, and a cruising speed of 550.0 km/hour."
+        expected = "Make: Boeing \nModel: Air Bus\nThis aircraft has a fuel burn rate of 40.0 litres/hour, and a cruising speed of 550.0 km/hour."
         self.assertEqual(expected, str(self.aircraft))
 
     def test_calculate_fuel_requirement_returns_correct_value(self):
